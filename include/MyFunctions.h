@@ -1,3 +1,5 @@
+#ifndef MAIN_CPP_MYFUNCTIONS_H
+#define MAIN_CPP_MYFUNCTIONS_H
 #include <iostream>
 #include <string>
 #include <vector>
@@ -50,3 +52,4 @@ vector <string> MakeSumVector(string FirstStr, string SecondStr)
     }
     return SumVector;
 }
+#endif //MAIN_CPP_MYFUNCTIONS_H

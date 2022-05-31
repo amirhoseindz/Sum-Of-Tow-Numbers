@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../lib/MyFunctions.cpp"
+#include "../include/MyFunctions.h"
 using namespace std;
 int main()
 {

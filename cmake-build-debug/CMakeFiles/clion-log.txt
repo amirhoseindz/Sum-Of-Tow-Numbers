@@ -1,17 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\c_lion\Sum Of Tow Numbers"
--- The C compiler identification is GNU 8.1.0
--- The CXX compiler identification is GNU 8.1.0
--- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe
--- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe - works
--- Detecting C compiler ABI info
-CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
-CMake Error at C:/Program Files/JetBrains/CLion 2020.2.4/bin/cmake/win/share/cmake-3.17/Modules/CMakeDetermineCompilerABI.cmake:48 (try_compile):
-  Failed to configure test project build system.
-Call Stack (most recent call first):
-  C:/Program Files/JetBrains/CLion 2020.2.4/bin/cmake/win/share/cmake-3.17/Modules/CMakeTestCCompiler.cmake:74 (CMAKE_DETERMINE_COMPILER_ABI)
-  CMakeLists.txt:2 (project)
-
-
--- Configuring incomplete, errors occurred!
-See also "D:/c_lion/Sum Of Tow Numbers/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "D:/c_lion/Sum Of Tow Numbers/cmake-build-debug/CMakeFiles/CMakeError.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/c_lion/Sum Of Tow Numbers/cmake-build-debug
