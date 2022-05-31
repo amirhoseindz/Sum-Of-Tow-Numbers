@@ -2,53 +2,54 @@
 #define MAIN_CPP_MYFUNCTIONS_H
 #include <iostream>
 #include <string>
+#include <utility>
 #include <vector>
 using namespace std;
-vector <string> MakeFirstNumberVector(string FirstStr, int BiggerNumber)
+struct Vectors
 {
     vector <string> FirstNumber;
-    int LastElementOfString = FirstStr.size() - 1;
-    for (int i = 0; i < FirstStr.size(); i++)
-    {
-        string FirstVectorElement(1, FirstStr[LastElementOfString - i]);
-        FirstNumber.push_back(FirstVectorElement);
-    }
-    if (BiggerNumber > FirstStr.size())
-    {
-        for (int i = 0; i < (BiggerNumber - FirstStr.size()); i++)
-        {
-            FirstNumber.emplace_back("0");
-        }
-    }
-    return FirstNumber;
-}
-vector <string> MakeSecondNumberVector(string SecondStr, int BiggerNumber)
-{
     vector <string> SecondNumber;
-    int LastElementOfString = SecondStr.size() - 1;
-    for (int i = 0; i < SecondStr.size(); i++)
+    Vectors ConvertNumbersStringToVector(string FirstStr, string SecondStr, int BiggerNumber)
     {
-        string SecondVectorElement(1, SecondStr[LastElementOfString - i]);
-        SecondNumber.push_back(SecondVectorElement);
-    }
-    if (BiggerNumber > SecondStr.size())
-    {
-        for (int i = 0; i < (BiggerNumber - SecondStr.size()); i++)
+        Vectors Numbers;
+        int LastElementOfFirstNumberString = FirstStr.size() - 1;
+        int LastElementOfSecondNumberString = SecondStr.size() - 1;
+        for (int i = 0; i < FirstStr.size(); i++)
         {
-            SecondNumber.emplace_back("0");
+            string FirstVectorElement(1, FirstStr[LastElementOfFirstNumberString - i]);
+            FirstNumber.push_back(FirstVectorElement);
         }
+        for (int i = 0; i < SecondStr.size(); i++)
+        {
+            string SecondVectorElement(1, SecondStr[LastElementOfSecondNumberString - i]);
+            SecondNumber.push_back(SecondVectorElement);
+        }
+        if (BiggerNumber > FirstStr.size())
+        {
+            for (int i = 0; i < (BiggerNumber - FirstStr.size()); i++)
+            {
+                FirstNumber.emplace_back("0");
+            }
+        }
+        if (BiggerNumber > SecondStr.size())
+        {
+            for (int i = 0; i < (BiggerNumber - SecondStr.size()); i++)
+            {
+                SecondNumber.emplace_back("0");
+            }
+        }
+        return Numbers;
     }
-    return SecondNumber;
-}
+};
 vector <string> MakeSumVector(string FirstStr, string SecondStr, int BiggerNumber)
 {
-    vector <string> FirstNumber = MakeFirstNumberVector(FirstStr, BiggerNumber);
-    vector <string> SecondNumber = MakeSecondNumberVector(SecondStr, BiggerNumber);
+    Vectors Numbers;
+    Numbers.ConvertNumbersStringToVector (std::move(FirstStr), std::move(SecondStr), BiggerNumber);
     vector <string> SumVector;
     int Tens = 0;
     for (int i = 0; i < BiggerNumber; i++)
     {
-        int temp = (stoi(FirstNumber.at(i)) + stoi(SecondNumber.at(i))) + Tens ;
+        int temp = (stoi(Numbers.FirstNumber.at(i)) + stoi(Numbers.SecondNumber.at(i))) + Tens ;
         if ((temp >= 10) && (i == (BiggerNumber -1)))
         {
             SumVector.push_back(to_string(temp));
