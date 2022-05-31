@@ -40,7 +40,7 @@ vector <string> MakeSecondNumberVector(string SecondStr, int BiggerNumber)
     }
     return SecondNumber;
 }
-vector <string> MakeSumVector(const string& FirstStr, const string& SecondStr, int BiggerNumber)
+vector <string> MakeSumVector(string FirstStr, string SecondStr, int BiggerNumber)
 {
     vector <string> FirstNumber = MakeFirstNumberVector(FirstStr, BiggerNumber);
     vector <string> SecondNumber = MakeSecondNumberVector(SecondStr, BiggerNumber);
@@ -48,19 +48,19 @@ vector <string> MakeSumVector(const string& FirstStr, const string& SecondStr, i
     int Tens = 0;
     for (int i = 0; i < BiggerNumber; i++)
     {
-        int temp = stoi(FirstNumber.at(i)) + stoi(SecondNumber.at(i));
-        if ( (FirstStr.size()== 1) && (SecondStr.size() == 1) )
+        int temp = (stoi(FirstNumber.at(i)) + stoi(SecondNumber.at(i))) + Tens ;
+        if ((temp >= 10) && (i == (BiggerNumber -1)))
         {
             SumVector.push_back(to_string(temp));
         }
-        else if (temp >= 10)
+        else if ((temp >= 10) && (i != (BiggerNumber -1)))
         {
-            SumVector.push_back(to_string((temp - 10) + Tens ));
+            SumVector.push_back(to_string((temp - 10)));
             Tens = 1;
         }
         else if (temp < 10)
         {
-            SumVector.push_back(to_string(temp + Tens));
+            SumVector.push_back(to_string(temp));
             Tens = 0;
         }
     }

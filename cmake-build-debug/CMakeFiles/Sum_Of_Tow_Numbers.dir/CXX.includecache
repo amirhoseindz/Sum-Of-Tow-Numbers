@@ -7,6 +7,12 @@
 #IncludeRegexTransform: 
 
 D:/c_lion/Sum Of Tow Numbers/include/MyFunctions.h
+iostream
+-
+string
+-
+vector
+-
 
 D:/c_lion/Sum Of Tow Numbers/test/main.cpp
 iostream

@@ -12,7 +12,7 @@ int main()
     cout << "please enter your second number : " << endl;
     cin >> SecondString;
     int BiggerNumber;
-    if ((FirstString.size() > SecondString.size()) || (FirstString.size() == SecondString.size()))
+    if ( FirstString.size() >= SecondString.size() )
     {
         BiggerNumber = FirstString.size();
     }
