@@ -1,0 +1,3 @@
+D:/c_lion/sum of 2 number algorythm/cmake-build-debug/CMakeFiles/sum_of_2_number_algorythm.dir
+D:/c_lion/sum of 2 number algorythm/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/c_lion/sum of 2 number algorythm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
