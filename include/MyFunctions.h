@@ -35,7 +35,7 @@ vector <string> MakeSumVector(string FirstStr, string SecondStr)
     for (int i = 0; i < FirstNumber.size(); i++)
     {
         int temp = stoi(FirstNumber.at(i)) + stoi(SecondNumber.at(i));
-        if ( (FirstStr.size()==1) && (SecondStr.size() == 1) )
+        if ( (FirstStr.size()== 1) && (SecondStr.size() == 1) )
         {
             SumVector.push_back(to_string(temp));
         }
