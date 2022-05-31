@@ -11,7 +11,16 @@ int main()
     cin >> FirstString;
     cout << "please enter your second number : " << endl;
     cin >> SecondString;
-    vector <string> SumVector = MakeSumVector(FirstString, SecondString);
+    int BiggerNumber;
+    if ((FirstString.size() > SecondString.size()) || (FirstString.size() == SecondString.size()))
+    {
+        BiggerNumber = FirstString.size();
+    }
+    else
+    {
+        BiggerNumber = SecondString.size();
+    }
+    vector <string> SumVector = MakeSumVector(FirstString, SecondString, BiggerNumber);
     for (int i = SumVector.size() - 1; i >= 0; i--)
     {
         cout << SumVector.at(i);
