@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.17)
-project(sum_of_2_number_algorythm)
+project(Sum_Of_Tow_Numbers)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(sum_of_2_number_algorythm main.cpp)
+add_executable(Sum_Of_Tow_Numbers
+        lib/MyFunctions.cpp
+        test/main.cpp)

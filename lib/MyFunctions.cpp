@@ -29,7 +29,7 @@ vector <string> MakeSumVector(string FirstStr, string SecondStr)
     vector <string> FirstNumber = MakeFirstNumberVector(FirstStr);
     vector <string> SecondNumber = MakeSecondNumberVector(SecondStr);
     vector <string> SumVector;
-    int c = 0;
+    int Tens = 0;
     for (int i = 0; i < FirstNumber.size(); i++)
     {
         int temp = stoi(FirstNumber.at(i)) + stoi(SecondNumber.at(i));
@@ -39,28 +39,14 @@ vector <string> MakeSumVector(string FirstStr, string SecondStr)
         }
         else if (temp >= 10)
         {
-            SumVector.push_back(to_string((temp - 10) + c ));
-            c = 1;
+            SumVector.push_back(to_string((temp - 10) + Tens ));
+            Tens = 1;
         }
         else if (temp < 10)
         {
-            SumVector.push_back(to_string(temp + c));
-            c = 0;
+            SumVector.push_back(to_string(temp + Tens));
+            Tens = 0;
         }
     }
     return SumVector;
-}
-int main()
-{
-    string FirstString;
-    string SecondString;
-    cout << "please enter your first number : " << endl;
-    cin >> FirstString;
-    cout << "please enter your second number : " << endl;
-    cin >> SecondString;
-    vector <string> SumVector = MakeSumVector(FirstString, SecondString);
-    for (int i = SumVector.size() - 1; i >= 0; i--)
-    {
-        cout << SumVector.at(i);
-    }
 }
