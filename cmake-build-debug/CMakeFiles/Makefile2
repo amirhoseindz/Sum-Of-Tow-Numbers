@@ -93,12 +93,12 @@ clean: CMakeFiles/Sum_Of_Tow_Numbers.dir/clean
 CMakeFiles/Sum_Of_Tow_Numbers.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sum_Of_Tow_Numbers.dir\build.make CMakeFiles/Sum_Of_Tow_Numbers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sum_Of_Tow_Numbers.dir\build.make CMakeFiles/Sum_Of_Tow_Numbers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\c_lion\Sum Of Tow Numbers\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Sum_Of_Tow_Numbers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\c_lion\Sum Of Tow Numbers\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target Sum_Of_Tow_Numbers"
 .PHONY : CMakeFiles/Sum_Of_Tow_Numbers.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Sum_Of_Tow_Numbers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\c_lion\Sum Of Tow Numbers\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\c_lion\Sum Of Tow Numbers\cmake-build-debug\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Sum_Of_Tow_Numbers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\c_lion\Sum Of Tow Numbers\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/Sum_Of_Tow_Numbers.dir/rule

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../include/MyFunctions.h"
+#include "../include/MyVectors.h"
 using namespace std;
 int main()
 {
@@ -11,18 +11,10 @@ int main()
     cin >> FirstString;
     cout << "please enter your second number : " << endl;
     cin >> SecondString;
-    int BiggerNumber;
-    if ( FirstString.size() >= SecondString.size() )
+    MyVectors SumVector;
+    vector <string> sumVector = SumVector.MakeSumVector(FirstString, SecondString);
+    for (int i = sumVector.size() - 1; i >= 0; i--)
     {
-        BiggerNumber = FirstString.size();
-    }
-    else
-    {
-        BiggerNumber = SecondString.size();
-    }
-    vector <string> SumVector = MakeSumVector(FirstString, SecondString, BiggerNumber);
-    for (int i = SumVector.size() - 1; i >= 0; i--)
-    {
-        cout << SumVector.at(i);
+        cout << sumVector.at(i);
     }
 }

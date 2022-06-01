@@ -142,6 +142,33 @@ Sum_Of_Tow_Numbers/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sum_Of_Tow_Numbers.dir\build.make CMakeFiles/Sum_Of_Tow_Numbers.dir/build
 .PHONY : Sum_Of_Tow_Numbers/fast
 
+lib/MyVectors.obj: lib/MyVectors.cpp.obj
+
+.PHONY : lib/MyVectors.obj
+
+# target to build an object file
+lib/MyVectors.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sum_Of_Tow_Numbers.dir\build.make CMakeFiles/Sum_Of_Tow_Numbers.dir/lib/MyVectors.cpp.obj
+.PHONY : lib/MyVectors.cpp.obj
+
+lib/MyVectors.i: lib/MyVectors.cpp.i
+
+.PHONY : lib/MyVectors.i
+
+# target to preprocess a source file
+lib/MyVectors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sum_Of_Tow_Numbers.dir\build.make CMakeFiles/Sum_Of_Tow_Numbers.dir/lib/MyVectors.cpp.i
+.PHONY : lib/MyVectors.cpp.i
+
+lib/MyVectors.s: lib/MyVectors.cpp.s
+
+.PHONY : lib/MyVectors.s
+
+# target to generate assembly for a file
+lib/MyVectors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sum_Of_Tow_Numbers.dir\build.make CMakeFiles/Sum_Of_Tow_Numbers.dir/lib/MyVectors.cpp.s
+.PHONY : lib/MyVectors.cpp.s
+
 test/main.obj: test/main.cpp.obj
 
 .PHONY : test/main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Sum_Of_Tow_Numbers
+	@echo ... lib/MyVectors.obj
+	@echo ... lib/MyVectors.i
+	@echo ... lib/MyVectors.s
 	@echo ... test/main.obj
 	@echo ... test/main.i
 	@echo ... test/main.s

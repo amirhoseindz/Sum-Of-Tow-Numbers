@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/c_lion/Sum Of Tow Numbers/lib/MyVectors.cpp" "D:/c_lion/Sum Of Tow Numbers/cmake-build-debug/CMakeFiles/Sum_Of_Tow_Numbers.dir/lib/MyVectors.cpp.obj"
   "D:/c_lion/Sum Of Tow Numbers/test/main.cpp" "D:/c_lion/Sum Of Tow Numbers/cmake-build-debug/CMakeFiles/Sum_Of_Tow_Numbers.dir/test/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

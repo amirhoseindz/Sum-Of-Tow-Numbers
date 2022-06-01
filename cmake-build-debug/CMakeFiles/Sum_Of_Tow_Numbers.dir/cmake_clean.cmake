@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Sum_Of_Tow_Numbers.dir/lib/MyVectors.cpp.obj"
   "CMakeFiles/Sum_Of_Tow_Numbers.dir/test/main.cpp.obj"
   "Sum_Of_Tow_Numbers.exe"
   "Sum_Of_Tow_Numbers.exe.manifest"
